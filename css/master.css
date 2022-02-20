@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    background-image: url(../wolfgang-hasselmann-bR_-gllg7Bs-unsplash.jpg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-one {
+    padding: 30px 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 1199px) {
+    .section-one {
+        padding: 50px 40px 0;
+    }
+}
+@media(max-width: 767px) {
+    .section-one {
+        padding: 20px 40px 0;
+    }
+}
+
+.current-info .hour {
+    font-size: 60px;
+}
+
+.current-info .hour span {
+    font-size: 30px;
+}
+
+.current-info .date {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+@media(max-width: 767px) {
+    .current-info .hour {
+        font-size: 40px;
+    }
+    .current-info .date {
+        font-size: 20px;
+    }
+}
+
+.current-info .temp-info {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #222222dd;
+}
+
+.current-info .temp-info > div {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location  span:nth-of-type(1) {
+    font-size: 20px;
+}
+
+.location  span:nth-of-type(2) {
+    font-size: 13px;
+}
+
+.section-two {
+    background-color: #222222dd;
+    overflow: auto;
+}
+
+.section-two .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1260px;
+    padding: 40px 20px;
+}
+
+@media(max-width: 767px) {
+    .section-two .container {
+        padding: 20px 20px;
+    }
+}
+
+.section-two .box {
+    border: 1px solid white;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.section-two .big-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.section-two .box > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.day {
+    padding: 10px 20px;
+    background-color: #222222;
+    border-radius: 20px;
+    font-weight: 400;
+}
+
+.big-box .day {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.night-temp,
+.day-temp {
+    color: #ccc;
+    display: block;
+    font-size: 13px;
+}
+
+.big-box .night-temp,
+.big-box .day-temp {
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+    margin: 10px 0;
+}
