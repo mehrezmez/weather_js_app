@@ -56,6 +56,7 @@ body {
     }
     .current-info .date {
         font-size: 20px;
+        margin: 10px 0;
     }
 }
 
@@ -70,6 +71,13 @@ body {
     margin: 10px 0;
     display: flex;
     justify-content: space-between;
+}
+
+@media(max-height: 799px) {
+    .current-info .temp-info > div {
+        margin: 5px 0; 
+        font-size: 13px;
+    }
 }
 
 @media(max-width: 767px) {
@@ -95,7 +103,8 @@ body {
 
 .section-two {
     background-color: #222222dd;
-    overflow: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .section-two .container {
