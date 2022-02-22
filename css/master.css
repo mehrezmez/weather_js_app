@@ -14,6 +14,7 @@ body {
     font-weight: 300;
     background-image: url(../wolfgang-hasselmann-bR_-gllg7Bs-unsplash.jpg);
     height: 100vh;
+    height: -webkit-fill-available;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -156,7 +157,6 @@ body {
 
 .big-box .night-temp,
 .big-box .day-temp {
-    font-size: 15px;
     color: white;
     font-weight: 400;
     margin: 10px 0;
